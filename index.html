@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AssetWise – Request what your workplace needs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <span class="brand">AssetWise</span>
+      <nav class="menu">
+        <button id="menuBtn" class="menu__toggle" aria-expanded="false" aria-controls="menuList">Menu ▾</button>
+        <ul id="menuList" class="menu__list" hidden>
+          <li><button class="menu__item" data-choice="Facilities">Facilities</button></li>
+          <li><button class="menu__item" data-choice="Electronics">Electronics</button></li>
+          <li><button class="menu__item" data-choice="Computer">Computer</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <h1>Request what your workplace needs.</h1>
+      <p>Rooms, repairs, gadgets and laptops in one place. Pick a category from the menu, choose an item, and send the request.</p>
+    </section>
+
+    <section class="wrap">
+      <div class="tabs" id="tabs"></div>
+      <h2 class="section-title" id="title"></h2>
+      <p class="section-sub" id="sub"></p>
+      <ul class="items" id="items" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <footer><div class="wrap">AssetWise · Requests are answered within one working day.</div></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
